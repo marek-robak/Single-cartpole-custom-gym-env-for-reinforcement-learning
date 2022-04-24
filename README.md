@@ -162,7 +162,7 @@ where they are located by clicking on the gifs below.
   <a href="https://github.com/mareo1208/Drone-2d-custom-gym-env-for-reinforcement-learning.git">
     <img src="media/drone_360.gif"/>
   </a>
-  <a href="https://github.com/mareo1208/Single-cartpole-custom-gym-env-for-reinforcement-learning.git">
+  <a href="https://github.com/mareo1208/Double-cartpole-custom-gym-env-for-reinforcement-learning">
     <img src="media/double_cartpole_360.gif"/>
   </a>
 </p>
