@@ -12,13 +12,13 @@ LONG_DESCRIPTION = ('This package contains OpenAI Gym environment designed for t
 
 setup(
     name='single_cartpole_custom_gym_env',
-    version='1.2.2',
+    version='1.2.3',
     author='Marek Robak',
     author_email='maro.robak@gmail.com',
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     long_description_content_type='text/markdown',
-    url='https://github.com/mareo1208/Single-cartpole-custom-gym-env-for-reinforcement-learning.git',
+    url='https://github.com/marek-robak/Single-cartpole-custom-gym-env-for-reinforcement-learning.git',
     download_url='https://pypi.org/project/single-cartpole-custom-gym-env/',
     packages=find_packages(),
     include_package_data = True,
