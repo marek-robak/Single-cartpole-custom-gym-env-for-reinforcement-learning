@@ -133,13 +133,13 @@ balance. The agent is also penalized for hitting a cart against a wall.
 
 <picture> 
   <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bwhite%7D%20R_1%28x%29%3DA%28-%7C%5Calpha%7C%2B1%29%2BB%28-%7Cx%7C%2B1%29%2C%5Cquad%20A%3E%20B">
-  <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bblack%7D%20R_1%28x%29%3DA%28-%7C%5Calpha%7C%2B1%29%2BB%28-%7Cx%7C%2B1%29%2C%5Cquad%20A%3E%20B">
+  <source media="(prefers-color-scheme: light)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bblack%7D%20R_1%28x%29%3DA%28-%7C%5Calpha%7C%2B1%29%2BB%28-%7Cx%7C%2B1%29%2C%5Cquad%20A%3E%20B">
   <img alt="R₁(x) = A(−|α| + 1) + B(−|x| + 1),    A > B">
 </picture>
 
 <picture> 
   <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bwhite%7D%20R_2%28x%29%3DC%2BD%28-%7Cx%7C%2B1%29%2C%5Cquad%20D%3E%20C%3E%5Cmax%28R_1%28x%29%29">
-  <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bblack%7D%20R_2%28x%29%3DC%2BD%28-%7Cx%7C%2B1%29%2C%5Cquad%20D%3E%20C%3E%5Cmax%28R_1%28x%29%29">
+  <source media="(prefers-color-scheme: light)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bblack%7D%20R_2%28x%29%3DC%2BD%28-%7Cx%7C%2B1%29%2C%5Cquad%20D%3E%20C%3E%5Cmax%28R_1%28x%29%29">
   <img alt="R₂(x) = C + D(−|x| + 1),    D > C > max(R₁(x))">
 </picture>
 
@@ -147,7 +147,7 @@ Variables x and 𝛼 are the first and second values from the agent observation 
 
 <picture> 
   <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bwhite%7D%20R%28x%29%3D%5Cbegin%7Bcases%7D%5Cfrac%7B18%7D%7B17%7D%28-%7C%5Calpha%7C%2B1%29%2B%5Cfrac%7B1%7D%7B2%7D%28-%7Cx%7C%2B1%29%20%26%5Cquad%5Calpha%3E%5Cfrac%7B1%7D%7B18%7D%5C%5C10%2B20%28-%7Cx%7C%2B1%29%20%26%5Cquad%5Calpha%5Cle%5Cfrac%7B1%7D%7B18%7D%5C%5C-100%20%26%5Cquad%7Cx%7C%3D1%5Ctext%7B%2C%20Penalty%20for%20colliding%20the%20cart%20with%20a%20wall%7D%5C%5C-50%20%26%5Cquad%5Ctext%7BPenalty%20for%20losing%20balance%7D%5Cend%7Bcases%7D">
-  <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bblack%7D%20R%28x%29%3D%5Cbegin%7Bcases%7D%5Cfrac%7B18%7D%7B17%7D%28-%7C%5Calpha%7C%2B1%29%2B%5Cfrac%7B1%7D%7B2%7D%28-%7Cx%7C%2B1%29%20%26%5Cquad%5Calpha%3E%5Cfrac%7B1%7D%7B18%7D%5C%5C10%2B20%28-%7Cx%7C%2B1%29%20%26%5Cquad%5Calpha%5Cle%5Cfrac%7B1%7D%7B18%7D%5C%5C-100%20%26%5Cquad%7Cx%7C%3D1%5Ctext%7B%2C%20Penalty%20for%20colliding%20the%20cart%20with%20a%20wall%7D%5C%5C-50%20%26%5Cquad%5Ctext%7BPenalty%20for%20losing%20balance%7D%5Cend%7Bcases%7D">
+  <source media="(prefers-color-scheme: light)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bblack%7D%20R%28x%29%3D%5Cbegin%7Bcases%7D%5Cfrac%7B18%7D%7B17%7D%28-%7C%5Calpha%7C%2B1%29%2B%5Cfrac%7B1%7D%7B2%7D%28-%7Cx%7C%2B1%29%20%26%5Cquad%5Calpha%3E%5Cfrac%7B1%7D%7B18%7D%5C%5C10%2B20%28-%7Cx%7C%2B1%29%20%26%5Cquad%5Calpha%5Cle%5Cfrac%7B1%7D%7B18%7D%5C%5C-100%20%26%5Cquad%7Cx%7C%3D1%5Ctext%7B%2C%20Penalty%20for%20colliding%20the%20cart%20with%20a%20wall%7D%5C%5C-50%20%26%5Cquad%5Ctext%7BPenalty%20for%20losing%20balance%7D%5Cend%7Bcases%7D">
   <img alt="R(x) = {(18/17) * (−|α| + 1) + (1/2) * (−|x| + 1), if α > 1/18}, {10 + 20 * (−|x| + 1), if α ≤ 1/18}, {−100, if |x| = 1 (Penalty for colliding the cart with a wall)}, {−50 (Penalty for losing balance)}">
 </picture>
 
