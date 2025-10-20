@@ -131,11 +131,27 @@ the cart closer to the target point. For this reason, this part of the function 
 dependence of only the distance of the cart from the target plus a penalty for loss of
 balance. The agent is also penalized for hitting a cart against a wall.
 
-<img src="https://camo.githubusercontent.com/e93f9a8c3de5a22348ead470a04d5b8b439edba972f984568b1f4d57fde1a706/68747470733a2f2f6c617465782e636f6465636f67732e636f6d2f7376672e696d6167653f7b5c6c617267655c636f6c6f727b626c61636b7d5228782c5c616c706861293d5c6c6566745c7b5c626567696e7b6d61747269787d285c667261637b31387d7b31377d29282d5c6c6566747c5c616c7068615c72696768747c2b31292b285c667261637b317d7b327d29282d5c6c6566747c785c72696768747c2b31292c265c616c7068613e5c667261637b317d7b31387d5c5c31302b3230282d5c6c6566747c785c72696768747c2b31292c265c616c7068615c6c65715c667261637b317d7b31387d5c5c2d3130302c265c7465787475707b77616c6c2673706163653b636f6c6c6973696f6e2673706163653b70656e616c74797d5c5c2d35302c265c7465787475707b70656e616c74792673706163653b666f722673706163653b6c6f73732673706163653b6f662673706163653b62616c616e63657d5c656e647b6d61747269787d5c72696768742e7d2367682d6c696768742d6d6f64652d6f6e6c79#gh-light-mode-only">
+<picture> 
+  <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bwhite%7D%20R_1%28x%29%3DA%28-%7C%5Calpha%7C%2B1%29%2BB%28-%7Cx%7C%2B1%29%2C%5Cquad%20A%3E%20B">
+  <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bblack%7D%20R_1%28x%29%3DA%28-%7C%5Calpha%7C%2B1%29%2BB%28-%7Cx%7C%2B1%29%2C%5Cquad%20A%3E%20B">
+  <img alt="R₁(x) = A(−|α| + 1) + B(−|x| + 1),    A > B">
+</picture>
 
-<img src="https://camo.githubusercontent.com/17641dd11fa7f4059cdb47659f240e6e1abbe48bb6a10eefc102c6c26035a202/68747470733a2f2f6c617465782e636f6465636f67732e636f6d2f7376672e696d6167653f7b5c6c617267655c636f6c6f727b77686974657d5228782c5c616c706861293d5c6c6566745c7b5c626567696e7b6d61747269787d285c667261637b31387d7b31377d29282d5c6c6566747c5c616c7068615c72696768747c2b31292b285c667261637b317d7b327d29282d5c6c6566747c785c72696768747c2b31292c265c616c7068613e5c667261637b317d7b31387d5c5c31302b3230282d5c6c6566747c785c72696768747c2b31292c265c616c7068615c6c65715c667261637b317d7b31387d5c5c2d3130302c265c7465787475707b77616c6c2673706163653b636f6c6c6973696f6e2673706163653b70656e616c74797d5c5c2d35302c265c7465787475707b70656e616c74792673706163653b666f722673706163653b6c6f73732673706163653b6f662673706163653b62616c616e63657d5c656e647b6d61747269787d5c72696768742e7d2367682d6461726b2d6d6f64652d6f6e6c79#gh-dark-mode-only">
+<picture> 
+  <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bwhite%7D%20R_2%28x%29%3DC%2BD%28-%7Cx%7C%2B1%29%2C%5Cquad%20D%3E%20C%3E%5Cmax%28R_1%28x%29%29">
+  <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bblack%7D%20R_2%28x%29%3DC%2BD%28-%7Cx%7C%2B1%29%2C%5Cquad%20D%3E%20C%3E%5Cmax%28R_1%28x%29%29">
+  <img alt="R₂(x) = C + D(−|x| + 1),    D > C > max(R₁(x))">
+</picture>
 
 Variables x and 𝛼 are the first and second values from the agent observation space.
+
+<picture> 
+  <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bwhite%7D%20R%28x%29%3D%5Cbegin%7Bcases%7D%5Cfrac%7B18%7D%7B17%7D%28-%7C%5Calpha%7C%2B1%29%2B%5Cfrac%7B1%7D%7B2%7D%28-%7Cx%7C%2B1%29%20%26%5Cquad%5Calpha%3E%5Cfrac%7B1%7D%7B18%7D%5C%5C10%2B20%28-%7Cx%7C%2B1%29%20%26%5Cquad%5Calpha%5Cle%5Cfrac%7B1%7D%7B18%7D%5C%5C-100%20%26%5Cquad%7Cx%7C%3D1%5Ctext%7B%2C%20Penalty%20for%20colliding%20the%20cart%20with%20a%20wall%7D%5C%5C-50%20%26%5Cquad%5Ctext%7BPenalty%20for%20losing%20balance%7D%5Cend%7Bcases%7D">
+  <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?%5CLarge%5Ccolor%7Bblack%7D%20R%28x%29%3D%5Cbegin%7Bcases%7D%5Cfrac%7B18%7D%7B17%7D%28-%7C%5Calpha%7C%2B1%29%2B%5Cfrac%7B1%7D%7B2%7D%28-%7Cx%7C%2B1%29%20%26%5Cquad%5Calpha%3E%5Cfrac%7B1%7D%7B18%7D%5C%5C10%2B20%28-%7Cx%7C%2B1%29%20%26%5Cquad%5Calpha%5Cle%5Cfrac%7B1%7D%7B18%7D%5C%5C-100%20%26%5Cquad%7Cx%7C%3D1%5Ctext%7B%2C%20Penalty%20for%20colliding%20the%20cart%20with%20a%20wall%7D%5C%5C-50%20%26%5Cquad%5Ctext%7BPenalty%20for%20losing%20balance%7D%5Cend%7Bcases%7D">
+  <img alt="R(x) = {(18/17) * (−|α| + 1) + (1/2) * (−|x| + 1), if α > 1/18}, {10 + 20 * (−|x| + 1), if α ≤ 1/18}, {−100, if |x| = 1 (Penalty for colliding the cart with a wall)}, {−50 (Penalty for losing balance)}">
+</picture>
+
+Final function with selected parameter values.
 
 ### Environment parameters
 
